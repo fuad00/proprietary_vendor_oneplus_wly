@@ -23,12 +23,19 @@ $(call add-radio-file-sha1-checked,radio/oplus_sec.img,903e1685b64a523d629ac41fc
 $(call add-radio-file-sha1-checked,radio/oplusstanvbk.img,976ec1732453a2f0418f707e5b7f0434747f5e94)
 $(call add-radio-file-sha1-checked,radio/qupfw.img,f9ea632e99e074b81a3f072768e3e940884d2c2e)
 $(call add-radio-file-sha1-checked,radio/shrm.img,cdfec2820b48e781802ab0d31aec45d56920c7b5)
-$(call add-radio-file-sha1-checked,radio/splash.img,8877705066051214763727acd252d62aba94aa5e)
 $(call add-radio-file-sha1-checked,radio/tz.img,a3b6d2d45ed5d3bbd8b0cf2db04669d5b8ed49cc)
 $(call add-radio-file-sha1-checked,radio/uefi.img,60daa14e38cab3745a431cbe3dce79fbafa20307)
 $(call add-radio-file-sha1-checked,radio/uefisecapp.img,a1082a43a6fc42884ab0db4b20304e89799d7b26)
 $(call add-radio-file-sha1-checked,radio/xbl.img,09011c7d7516d1464e7292ae04d647a46e18decd)
 $(call add-radio-file-sha1-checked,radio/xbl_config.img,ff867788635bd4a1c0b4f9c2a543dbf51bdff4e2)
 $(call add-radio-file-sha1-checked,radio/xbl_ramdump.img,84b546ebac9d790c2b4e8479d388d886dbc51d5a)
+
+endif
+
+ifeq ($(TARGET_DEVICE),wly)
+
+ifeq ($(if $(CUSTOM_BRANDING_DIR),$(wildcard $(CUSTOM_BRANDING_DIR)/firmware/wly/splash.img)),)
+$(call add-radio-file-sha1-checked,radio/splash.img,8877705066051214763727acd252d62aba94aa5e)
+endif
 
 endif

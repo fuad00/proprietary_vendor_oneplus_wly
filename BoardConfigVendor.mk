@@ -20,10 +20,12 @@ AB_OTA_PARTITIONS += \
     oplusstanvbk \
     qupfw \
     shrm \
-    splash \
     tz \
     uefi \
     uefisecapp \
     xbl \
     xbl_config \
     xbl_ramdump
+
+AB_OTA_PARTITIONS += \
+    splash
