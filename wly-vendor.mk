@@ -1239,7 +1239,6 @@ PRODUCT_PACKAGES += \
     libtfestriping \
     libthreadutils \
     libubifocus \
-    vendor.oplus.hardware.cameraextension-V1-ndk_platform \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
@@ -1418,11 +1417,8 @@ PRODUCT_PACKAGES += \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
-    vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
-    vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
     odm_lib_rfsa_adsp_aiboost_libQnnHtpV69Skel_so \

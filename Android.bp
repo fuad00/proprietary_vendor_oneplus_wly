@@ -2664,7 +2664,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.3-impl",
                 "libjpeg",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -2755,7 +2755,7 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "liblog",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -2849,7 +2849,7 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "liblog",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -2999,7 +2999,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3055,7 +3055,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3109,7 +3109,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3169,7 +3169,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3225,7 +3225,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3283,7 +3283,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -3343,7 +3343,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -7375,31 +7375,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cameraextension-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.cammidasservice@1.0",
     owner: "oneplus",
     strip: {
@@ -8325,7 +8300,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloctypes",
                 "libqdMetaData",
                 "vendor.qti.hardware.display.mapper@4.0",
@@ -12367,56 +12342,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.orms@1.0",
     owner: "oneplus",
     strip: {
@@ -12485,31 +12410,6 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "com.qti.chi.override",
                 "vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.sendextcamcmd-V2-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -12935,7 +12835,7 @@ cc_prebuilt_binary {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -12975,6 +12875,7 @@ cc_prebuilt_binary {
                 "proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service",
             ],
             shared_libs: [
+                "libshims_fingerprint.oplus",
                 "libbinder",
                 "liblog",
                 "libhidlbase",
